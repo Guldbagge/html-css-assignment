@@ -409,6 +409,12 @@ header .container .menu .btn-login {
 
 .services-section {
   background-color: #F0EFE9;
+  position: relative;
+}
+.services-section .lines-white-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
 }
 @media (min-width: 768px) {
   .services-section {
@@ -565,4 +571,59 @@ header .container .menu .btn-login {
 .project-and-case .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
+}
+
+.newsletter {
+  background-color: #F0EFE9;
+  position: relative;
+}
+.newsletter .background-wavy-lines {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .newsletter .background-wavy-lines {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+  }
+}
+.newsletter .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (min-width: 992px) {
+  .newsletter .container {
+    flex-direction: row;
+  }
+}
+.newsletter .container h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .newsletter .container h2 {
+    margin: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .newsletter .container h2 {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+}
+.newsletter .container form input {
+  outline: none;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  color: #191919;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-right: 20px;
 }

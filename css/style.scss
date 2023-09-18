@@ -458,8 +458,21 @@ display: none;
 
 // our services section
 
+
+
 .services-section{
     background-color:#F0EFE9;
+    position: relative;
+    
+    .lines-white-right{
+       
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    
+
+
+    }
     
     @media (min-width: 768px){
         padding-top: 120px;
@@ -635,4 +648,67 @@ display: none;
     }
 }
 
+// newsletter section
+
+.newsletter{
+    background-color: #F0EFE9;
+    position: relative;
+    
+    .background-wavy-lines{
+        display: none;
+    
+        @media (min-width: 1600px){
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        }
+
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @media (min-width: 992px){
+            flex-direction: row;
+            
+        }
+
+        h2{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+
+            @media (min-width: 992px){
+                margin: 0px;
+            }
+
+
+            @media (min-width: 1200px){
+                font-size: 45px;
+                margin-bottom: 0px;    
+            }
+        }
+        
+        form{
+            input{
+                
+                
+                outline: none;
+                border: 1px solid rgb(25, 25, 25, 0.10);
+                color: #191919;
+                text-decoration: none;
+                padding: 15px 30px;
+                border-radius: 25px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
 
