@@ -60,6 +60,7 @@ html, body{
     }
 
 }
+
 .btn-transparent {
     background-color: transparent;
     border: 1px solid #191919;
@@ -101,6 +102,30 @@ html, body{
         
         
     }
+}
+
+.btn-round{
+    background-color: #ffffff;
+    border: 1px solid rgb(219, 219, 219);
+    color: #191919;
+    text-decoration: none;
+    // padding: 15px 30px;
+    // font-weight: 600;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+
+    i {
+        margin-left: 0px;
+        font-size: 1.5rem;
+    }
+
+    &:hover{
+        background-color: #ffffff;
+        border: 1px solid #191919;
+        color: #191919;  
+    }
+
 }
 
 .section-title {
@@ -537,6 +562,7 @@ display: none;
                 margin-left: 50px;
                 margin-right: 50px;
                 position: relative;
+                z-index: -10;
     
                 .box{
                     position: absolute;
@@ -545,6 +571,12 @@ display: none;
                     background-color: #BEEBFF;
                     bottom: 40px;
                     right: 220px;
+                }
+                .line{
+                    position: absolute;
+                    z-index: 10;
+                    top: 30px;
+                    left: 0px;
                 }
             }
     
@@ -558,7 +590,7 @@ display: none;
     
             .btn-black{
                 font-weight: 100;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
             }
                 a{
                     font-weight: 100;
@@ -693,6 +725,29 @@ display: none;
             }
         } 
 }
+
+// why Choose Us section
+
+.why-choose-us{
+    margin-top: 60px;
+
+    .container{
+
+        .process{
+            display: flex;
+        }
+
+        @media (min-width: 1400px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            
+        }
+    }
+}
+
+
 
 // project & case studies section
 

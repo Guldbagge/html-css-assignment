@@ -87,6 +87,25 @@ html, body {
   font-weight: 100;
 }
 
+.btn-round {
+  background-color: #ffffff;
+  border: 1px solid rgb(219, 219, 219);
+  color: #191919;
+  text-decoration: none;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+}
+.btn-round i {
+  margin-left: 0px;
+  font-size: 1.5rem;
+}
+.btn-round:hover {
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  color: #191919;
+}
+
 .section-title {
   padding-top: 70px;
   padding-bottom: 30px;
@@ -465,6 +484,7 @@ header .container .menu .btn-login {
     margin-left: 50px;
     margin-right: 50px;
     position: relative;
+    z-index: -10;
   }
   .about-company .container-about-company .woman .box {
     position: absolute;
@@ -473,6 +493,12 @@ header .container .menu .btn-login {
     background-color: #BEEBFF;
     bottom: 40px;
     right: 220px;
+  }
+  .about-company .container-about-company .woman .line {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 0px;
   }
   .about-company .container-about-company .about-companys {
     margin-left: 50px;
@@ -484,7 +510,7 @@ header .container .menu .btn-login {
   }
   .about-company .container-about-company .about-companys .btn-black {
     font-weight: 100;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .about-company .container-about-company .about-companys a {
     font-weight: 100;
@@ -605,6 +631,20 @@ header .container .menu .btn-login {
 @media (min-width: 768px) {
   .services-section .btn-transparent {
     margin-bottom: 0px;
+  }
+}
+
+.why-choose-us {
+  margin-top: 60px;
+}
+.why-choose-us .container .process {
+  display: flex;
+}
+@media (min-width: 1400px) {
+  .why-choose-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
