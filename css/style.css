@@ -407,6 +407,94 @@ header .container .menu .btn-login {
   line-height: 1.5;
 }
 
+.about-company {
+  margin-bottom: 120px;
+}
+.about-company .container .container-about-company .woman .box {
+  width: 375px;
+  height: 180px;
+  background-color: #BEEBFF;
+  padding-top: 40px;
+  padding-left: 25px;
+}
+.about-company .container .container-about-company .woman .box .name-founder {
+  display: flex;
+  align-items: center;
+}
+.about-company .container .container-about-company .woman .box .name-founder .name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.about-company .container .container-about-company .woman .box .name-founder .founder {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #F94D1C;
+}
+.about-company .container .container-about-company .about-companys {
+  padding: 10px;
+  margin-top: 40px;
+}
+.about-company .container .container-about-company .about-companys .company-heding {
+  color: #F94D1C;
+}
+.about-company .container .container-about-company .about-companys h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about-company .container .container-about-company .about-companys p {
+  line-height: 2;
+}
+.about-company .container .container-about-company .about-companys a {
+  text-decoration: none;
+  color: #191919;
+}
+.about-company .container .container-about-company .about-companys a i {
+  margin: 20px;
+}
+@media (min-width: 1400px) {
+  .about-company .container-about-company {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .about-company .container-about-company .woman {
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+  }
+  .about-company .container-about-company .woman .box {
+    position: absolute;
+    width: 375px;
+    height: 180px;
+    background-color: #BEEBFF;
+    bottom: 40px;
+    right: 220px;
+  }
+  .about-company .container-about-company .about-companys {
+    margin-left: 50px;
+    margin-right: 50x;
+    margin-top: 0px;
+    height: auto;
+    width: 540px;
+    padding: 0px;
+  }
+  .about-company .container-about-company .about-companys .btn-black {
+    font-weight: 100;
+    margin-bottom: 5px;
+  }
+  .about-company .container-about-company .about-companys a {
+    font-weight: 100;
+  }
+  .about-company .container-about-company .about-companys a i {
+    padding-top: 100px;
+    font-size: 50px;
+  }
+}
+
 .services-section {
   background-color: #F0EFE9;
   position: relative;
