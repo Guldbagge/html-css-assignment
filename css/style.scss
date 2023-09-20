@@ -732,20 +732,84 @@ display: none;
     margin-top: 60px;
 
     .container{
-
-        .process{
-            display: flex;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         @media (min-width: 1400px){
-            display: flex;
-            align-items: center;
+            flex-direction: row;
             justify-content: space-between;
-    
+
+            .best-business-image{
+                position: relative;
+                z-index: -10;
+                top: 0px;
+                left: 0px;
+
+                .best-business-square{
+                    width: 1057px;
+                    height: 425px;
+                    background-color: #F0EFE9;
+                    z-index: -1;
+                    position: absolute;
+                    right: -300px;
+                    bottom: -340px;
+
+                }
+
+                .best-image{
+                    position: absolute;
+                    z-index: 1;
+                    top: -270px;
+                    right: 0px;
+                    // height: 505px;
+                    // width: 645px;
+                    
+
+                }
+            }
             
         }
+
+  
+
+        
+        .best-business{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            h2{
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+                margin-bottom: 40px;
+            }
+            .why-Choose-us-heding{
+                color: #F94D1C;
+            }
+
+            .process{
+                display: flex;
+
+
+            }
+
+            @media (min-width: 1400px){
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                
+            }
+            
+        }    
     }
 }
+
+
 
 
 

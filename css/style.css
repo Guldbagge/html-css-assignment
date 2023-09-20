@@ -637,11 +637,59 @@ header .container .menu .btn-login {
 .why-choose-us {
   margin-top: 60px;
 }
-.why-choose-us .container .process {
+.why-choose-us .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 1400px) {
   .why-choose-us .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .why-choose-us .container .best-business-image {
+    position: relative;
+    z-index: -10;
+    top: 0px;
+    left: 0px;
+  }
+  .why-choose-us .container .best-business-image .best-business-square {
+    width: 1057px;
+    height: 425px;
+    background-color: #F0EFE9;
+    z-index: -1;
+    position: absolute;
+    right: -300px;
+    bottom: -340px;
+  }
+  .why-choose-us .container .best-business-image .best-image {
+    position: absolute;
+    z-index: 1;
+    top: -270px;
+    right: 0px;
+  }
+}
+.why-choose-us .container .best-business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.why-choose-us .container .best-business h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.why-choose-us .container .best-business .why-Choose-us-heding {
+  color: #F94D1C;
+}
+.why-choose-us .container .best-business .process {
+  display: flex;
+}
+@media (min-width: 1400px) {
+  .why-choose-us .container .best-business {
     display: flex;
     align-items: center;
     justify-content: space-between;
