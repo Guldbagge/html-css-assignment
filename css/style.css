@@ -528,7 +528,7 @@ header .container .menu .btn-login {
 .services-section .lines-white-right {
   position: absolute;
   bottom: 0px;
-  right: 0;
+  right: 0px;
 }
 @media (min-width: 768px) {
   .services-section {
@@ -541,7 +541,6 @@ header .container .menu .btn-login {
 }
 @media (min-width: 768px) {
   .services-section .section-title {
-    text-align: left;
     margin-bottom: 0px;
     margin-left: 75px;
   }
@@ -562,6 +561,7 @@ header .container .menu .btn-login {
   .services-section .section-title h2 {
     font-size: 66px;
     margin-bottom: 0px;
+    margin-left: 0px;
   }
 }
 .services-section .container {
@@ -675,18 +675,27 @@ header .container .menu .btn-login {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 .why-choose-us .container .best-business h2 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .why-choose-us .container .best-business .why-Choose-us-heding {
   color: #F94D1C;
 }
 .why-choose-us .container .best-business .process {
   display: flex;
+}
+.why-choose-us .container .best-business .process div {
+  margin-left: 15px;
+  margin-bottom: 45px;
+}
+.why-choose-us .container .best-business .process div h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
 }
 @media (min-width: 1400px) {
   .why-choose-us .container .best-business {
@@ -747,6 +756,19 @@ header .container .menu .btn-login {
 .project-and-case .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
+}
+
+.meet-our-team {
+  background-color: #F0D082;
+}
+.meet-our-team .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.meet-our-team .testimonial .testimonial-box .container .testimonial-information {
+  width: 300px;
 }
 
 .newsletter {
