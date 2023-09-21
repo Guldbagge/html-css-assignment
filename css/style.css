@@ -881,6 +881,11 @@ header .container .menu .btn-login {
 }
 
 .article-and-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
   margin-top: 100px;
 }
 .article-and-news .article-red-text {
@@ -900,13 +905,22 @@ header .container .menu .btn-login {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
   font-weight: 700;
+  margin-bottom: -20px;
 }
 .article-and-news p {
   color: #636363;
+  margin-top: 25px;
+  line-height: 2;
 }
 .article-and-news .btn-transparent {
   margin-top: 10px;
   margin-right: 10px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1400px) {
+  .article-and-news .btn-transparent {
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 1400px) {
   .article-and-news .heading-and-btn {
@@ -943,6 +957,20 @@ header .container .menu .btn-login {
   .article-and-news .container {
     display: block;
     padding: 0px;
+  }
+}
+.article-and-news .dots {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .article-and-news .dots {
+    display: block;
+  }
+  .article-and-news .dots .fa-duotone {
+    padding-right: 15px;
+  }
+  .article-and-news .dots .fa-solid {
+    padding-right: 15px;
   }
 }
 
