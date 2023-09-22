@@ -1244,3 +1244,99 @@ display: none;
     }
 }
 
+// footer section
+footer{
+    background-color: #0E1021;
+    h3{color: #FFFFFF;}
+    color: #b1b1b1;
+    padding-top: 50px;
+    padding-bottom: 15px;
+
+    .container{
+        
+        .footer-links{
+            @media (min-width: 992px) {
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+                .logo{
+                    img{
+                        margin-top: 20px;
+                        margin-bottom: 40px;
+                    }
+
+                    p{
+                    width: 350px;}
+                    line-height: 2;
+                    
+                    
+                }
+            }
+
+
+
+            .footer-linkss{
+                h3{
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin-top: 50px;
+                    margin-bottom: 30px;
+                }
+                
+                .links{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        color: #b1b1b1;
+                        line-height: 2.5;
+                    }
+                }
+            }
+        }
+
+
+        .footer-social-media{
+
+           
+
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                
+            }
+            .socialmedia-bar{
+                display: flex;
+      
+                // @media (min-width: 992px) {
+                //     display: block;
+                // }
+                
+                a{
+                    color: #ffffff;
+                    font-size: 1.3rem;
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+    
+                    &:hover{
+                        color: #7a7a7a;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .border-bottom{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
