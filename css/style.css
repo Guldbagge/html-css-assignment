@@ -1034,9 +1034,15 @@ footer {
   color: #b1b1b1;
   padding-top: 50px;
   padding-bottom: 15px;
+  position: relative;
 }
 footer h3 {
   color: #FFFFFF;
+}
+footer .background-lines-right {
+  position: absolute;
+  bottom: 86px;
+  right: 0px;
 }
 @media (min-width: 992px) {
   footer .container .footer-links {
@@ -1085,7 +1091,7 @@ footer .container .footer-social-media .socialmedia-bar {
 footer .container .footer-social-media .socialmedia-bar a {
   color: #ffffff;
   font-size: 1.3rem;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 footer .container .footer-social-media .socialmedia-bar a:hover {

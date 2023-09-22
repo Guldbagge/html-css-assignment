@@ -1251,6 +1251,12 @@ footer{
     color: #b1b1b1;
     padding-top: 50px;
     padding-bottom: 15px;
+    position: relative;
+    .background-lines-right{
+        position: absolute;
+        bottom: 86px;
+        right: 0px;
+    }
 
     .container{
         
@@ -1293,6 +1299,7 @@ footer{
                         text-decoration: none;
                         color: #b1b1b1;
                         line-height: 2.5;
+                        
                     }
                 }
             }
@@ -1320,7 +1327,7 @@ footer{
                 a{
                     color: #ffffff;
                     font-size: 1.3rem;
-                    margin-left: 10px;
+                    margin-left: 20px;
                     margin-bottom: 20px;
     
                     &:hover{
