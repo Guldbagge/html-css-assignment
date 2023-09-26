@@ -1554,7 +1554,7 @@ footer{
         .form-wrapper{
 
             padding: 15px;
-            
+
             @media (min-width: 992px){
                 padding: 150px;
 
@@ -1581,15 +1581,14 @@ footer{
     }
 }
 
-.map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-    img{
-    width: 100vw;
-}
-
+    .map{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        img{
+        width: 100vw;
+    }
 }
 
 
