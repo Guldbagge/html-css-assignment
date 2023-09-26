@@ -293,10 +293,22 @@ header {
     }
 }
 
+
 // showcase section
 
 .showcase {
     background-color:#F0EFE9;
+    position: relative;
+
+    .line{
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        
+        @media (min-width: 1400px){
+            display: block;
+        }
+    }
 
     .container{
         display: flex;
@@ -334,7 +346,6 @@ header {
                 padding-bottom: 40px;
                 padding-left: 10px;
                 padding-right: 10px;
-                // Same result with margin
                 
                 @media (min-width: 768px){
                     font-size: 20px;
@@ -354,6 +365,7 @@ header {
                 @media (min-width: 768px){
                     margin-right: 10px;
                     display: inline-block; //btn next to eatch other
+                    margin-bottom: 80px;
                 }
             }
         }
@@ -1033,18 +1045,6 @@ display: none;
             background-color: #FFFFFF;
             height: 887px;
             width: 1520px;
-
-            // margin-left: 60px;
-            // background-color: #FFFFFF;
-            // position: relative;
-
-            // left: 0px;
-            // top: 20px;
-            .testimonial-box{
-
-            }
-
-
         }
 
         .testimonial-box{
@@ -1376,7 +1376,7 @@ footer{
 
 
         .footer-social-media{
-
+            
            
 
             @media (min-width: 992px) {
@@ -1412,8 +1412,129 @@ footer{
     .border-bottom{
         margin-top: 50px;
         margin-bottom: 20px;
+        
     }
-
-
 }
 
+// lets-connect section
+
+.contact{
+
+    .lets-connect{
+    background-color:#F0EFE9;
+    position: relative;
+
+        .line{
+            display: none;
+            position: absolute;
+            bottom: 0px;
+            
+            @media (min-width: 1400px){
+                display: block;
+            }
+        }
+
+        .container{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .links-connect{
+                    margin-top: 50px;
+                    a{
+                        // nead to change to block, a is inline
+                        display: inline-block;
+                        color: #191919;
+                        text-decoration: none;
+                        margin-right: 35px;
+                        position: relative;
+
+                        &.active {
+                            font-weight: 500;
+                        
+                        }
+                        // After active will the following to occur
+                        &.active::after,
+                        &:hover::after {
+                            content: '';
+                            font-weight: 500;
+                            position: absolute;
+                            height: 2px;
+                            width: 15px;
+                            background-color: #191919;
+                            left: 50%;
+                            bottom: -3px;
+                            transform: translate((calc(50% - 15px)));
+                        }
+                    }
+                }
+                
+                .h2-links{
+                    h2{
+                        font-size: 56px;        
+                        color: #191919;
+                        font-family: 'Dm Sans', sans-serif;
+                        font-weight: 700;    
+                        margin-bottom: 80px;    
+                    }
+                }
+            }
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .border{ 
+
+            margin-top: 120px;
+            margin-bottom: 80px;
+            a{
+                text-decoration: none;
+                display: flex;
+                padding: 50px;
+                
+                .btn-round{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #191919;
+                    color: #F0EFE9;
+                    height: 65px;
+                    width: 65px;
+
+
+                }
+
+                .contact-information{
+                    margin-left: 20px;
+                    margin-bottom: -20px;
+                    margin-right: 70px;
+
+                    h3{
+                        font-size: 22px;        
+                        color: #191919;
+                        font-family: 'Dm Sans', sans-serif;
+                        font-weight: 700;  
+                        margin-bottom: 15px;  
+                    }
+
+                    p{
+                        color: #191919;
+                        font-size: 18;
+                    }
+                }
+            }
+        }
+    }
+}

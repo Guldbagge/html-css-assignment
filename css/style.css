@@ -249,6 +249,17 @@ header .container .menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
+}
+.showcase .line {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+}
+@media (min-width: 1400px) {
+  .showcase .line {
+    display: block;
+  }
 }
 .showcase .container {
   display: flex;
@@ -304,6 +315,7 @@ header .container .menu .btn-login {
   .showcase .container .content a {
     margin-right: 10px;
     display: inline-block;
+    margin-bottom: 80px;
   }
 }
 .showcase .container img {
@@ -1157,4 +1169,101 @@ footer .container .footer-social-media .socialmedia-bar {
 footer .border-bottom {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+.contact .lets-connect {
+  background-color: #F0EFE9;
+  position: relative;
+}
+.contact .lets-connect .line {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+}
+@media (min-width: 1400px) {
+  .contact .lets-connect .line {
+    display: block;
+  }
+}
+.contact .lets-connect .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .lets-connect .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .lets-connect .container .content .links-connect {
+  margin-top: 50px;
+}
+.contact .lets-connect .container .content .links-connect a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+.contact .lets-connect .container .content .links-connect a.active {
+  font-weight: 500;
+}
+.contact .lets-connect .container .content .links-connect a.active::after, .contact .lets-connect .container .content .links-connect a:hover::after {
+  content: "";
+  font-weight: 500;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+.contact .lets-connect .container .content .h2-links h2 {
+  font-size: 56px;
+  color: #191919;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .container .border {
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.contact .container .border a {
+  text-decoration: none;
+  display: flex;
+  padding: 50px;
+}
+.contact .container .border a .btn-round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  color: #F0EFE9;
+  height: 65px;
+  width: 65px;
+}
+.contact .container .border a .contact-information {
+  margin-left: 20px;
+  margin-bottom: -20px;
+  margin-right: 70px;
+}
+.contact .container .border a .contact-information h3 {
+  font-size: 22px;
+  color: #191919;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.contact .container .border a .contact-information p {
+  color: #191919;
+  font-size: 18;
 }
