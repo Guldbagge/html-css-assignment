@@ -354,34 +354,39 @@ header .container .menu .btn-login {
 }
 
 .accounting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accounting .container {
   border: solid 1px #191919;
   margin: 100px;
   padding: 50px;
 }
 @media (min-width: 1200px) {
-  .accounting {
+  .accounting .container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.accounting .section-title,
-.accounting .container {
+.accounting .container .section-title,
+.accounting .container .container {
   flex: 1;
 }
-.accounting .section-title {
+.accounting .container .section-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.accounting .section-title .btn-yellow {
+.accounting .container .section-title .btn-yellow {
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 20px;
 }
 @media (min-width: 992px) {
-  .accounting .section-title {
+  .accounting .container .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -389,49 +394,49 @@ header .container .menu .btn-login {
     gap: 20px;
     margin-top: -100px;
   }
-  .accounting .section-title .btn-yellow {
+  .accounting .container .section-title .btn-yellow {
     padding-left: 150px;
     padding-right: 150px;
   }
 }
-.accounting .container {
+.accounting .container .business-box {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 @media (min-width: 992px) {
-  .accounting .container {
+  .accounting .container .business-box {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 992px) {
-  .accounting .container .business-advice,
-  .accounting .container .startup-business,
-  .accounting .container .financial-advice,
-  .accounting .container .risk-management {
+  .accounting .container .business-box .business-advice,
+  .accounting .container .business-box .startup-business,
+  .accounting .container .business-box .financial-advice,
+  .accounting .container .business-box .risk-management {
     width: 220px;
   }
 }
-.accounting .container .business-advices,
-.accounting .container .startup-businesss,
-.accounting .container .financial-advices,
-.accounting .container .risk-managements {
+.accounting .container .business-box .business-advices,
+.accounting .container .business-box .startup-businesss,
+.accounting .container .business-box .financial-advices,
+.accounting .container .business-box .risk-managements {
   text-decoration: none;
   color: #191919;
 }
-.accounting .container .business-advices i,
-.accounting .container .startup-businesss i,
-.accounting .container .financial-advices i,
-.accounting .container .risk-managements i {
+.accounting .container .business-box .business-advices i,
+.accounting .container .business-box .startup-businesss i,
+.accounting .container .business-box .financial-advices i,
+.accounting .container .business-box .risk-managements i {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: x-large;
 }
-.accounting .container .business-advices h3,
-.accounting .container .startup-businesss h3,
-.accounting .container .financial-advices h3,
-.accounting .container .risk-managements h3 {
+.accounting .container .business-box .business-advices h3,
+.accounting .container .business-box .startup-businesss h3,
+.accounting .container .business-box .financial-advices h3,
+.accounting .container .business-box .risk-managements h3 {
   color: #191919;
   font-family: "Dm Sans", sans-serif;
   font-size: 22px;

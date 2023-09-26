@@ -410,6 +410,11 @@ display: none;
 // accounting is trusted section
 
 .accounting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.container{
+    
     border: solid 1px #191919;
     margin: 100px;
     padding: 50px;
@@ -455,7 +460,7 @@ display: none;
         }
     }
 
-    .container{
+    .business-box{
         display: grid;
         align-items: center;
         grid-template-columns: 1fr;
@@ -496,6 +501,7 @@ display: none;
             }
         }
     } 
+}
 }
 
 // about Company section
