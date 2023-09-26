@@ -1229,9 +1229,14 @@ footer .border-bottom {
   margin-bottom: 80px;
 }
 .contact .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+}
+@media (min-width: 1400px) {
+  .contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .contact .container .border {
   margin-top: 120px;
@@ -1266,4 +1271,50 @@ footer .border-bottom {
 .contact .container .border a .contact-information p {
   color: #191919;
   font-size: 18;
+}
+
+.leave-message .container {
+  background-color: #F0EFE9;
+  text-align: center;
+}
+.leave-message .container .form-wrapper {
+  padding: 15px;
+}
+@media (min-width: 992px) {
+  .leave-message .container .form-wrapper {
+    padding: 150px;
+  }
+}
+.leave-message .container .form-wrapper h3 {
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .leave-message .container .form-wrapper h3 {
+    font-size: 45px;
+  }
+}
+.leave-message .container .form-wrapper form .form-input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  padding-left: 30px;
+  border: 0px;
+  border-radius: 30px;
+}
+.leave-message .container .form-wrapper form textarea {
+  resize: none;
+  height: 160px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.map img {
+  width: 100vw;
 }
