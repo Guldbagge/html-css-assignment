@@ -72,6 +72,65 @@ html, body {
   color: #F0EFE9;
 }
 
+.btn-square {
+  background-color: transparent;
+  border: 1px solid #878787;
+  color: #191919;
+  text-decoration: none;
+  padding: 5px 17px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+@media (min-width: 992px) {
+  .btn-square {
+    font-size: 21px;
+  }
+}
+.btn-square i {
+  margin-left: 8px;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .btn-square i {
+    font-size: 1.3rem;
+  }
+}
+.btn-square:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+.btn-square-black {
+  background-color: #191919;
+  border: 1px solid #878787;
+  color: white;
+  text-decoration: none;
+  padding: 5px 17px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .btn-square-black {
+    font-size: 21px;
+  }
+}
+.btn-square-black i {
+  margin-left: 8px;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .btn-square-black i {
+    font-size: 1.3rem;
+  }
+}
+.btn-square-black:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
 .btn-service {
   background-color: #191919;
   border: 1px solid #191919;
@@ -882,6 +941,12 @@ header .container .menu .btn-login {
     gap: 500px;
   }
 }
+.meet-our-team .testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media (min-width: 1400px) {
   .meet-our-team .testimonial {
     background-color: #FFFFFF;
@@ -1069,6 +1134,12 @@ header .container .menu .btn-login {
   padding: 15px 30px;
   border-radius: 25px;
   margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .newsletter .container form input {
+    margin-bottom: 0px;
+  }
 }
 
 footer {
@@ -1098,20 +1169,25 @@ footer .container .footer-links {
   justify-content: space-between;
   align-items: flex-start;
 }
-footer .container .footer-links .logo p {
+footer .container .footer-links .logo {
   display: none;
 }
 footer .container .footer-links .logo img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+footer .container .footer-links .logo p {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer .container .footer-links .logo {
+    display: block;
+  }
+}
 @media (min-width: 992px) {
   footer .container .footer-links .logo img {
     margin-top: 20px;
     margin-bottom: 40px;
-  }
-  footer .container .footer-links .logo p {
-    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -1176,46 +1252,46 @@ footer .border-bottom {
   margin-bottom: 20px;
 }
 
-.contact .lets-connect {
+.lets-connect {
   background-color: #F0EFE9;
   position: relative;
 }
-.contact .lets-connect .line {
+.lets-connect .line {
   display: none;
   position: absolute;
   bottom: 0px;
 }
 @media (min-width: 1400px) {
-  .contact .lets-connect .line {
+  .lets-connect .line {
     display: block;
   }
 }
-.contact .lets-connect .container {
+.lets-connect .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.contact .lets-connect .container .content {
+.lets-connect .container .content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.contact .lets-connect .container .content .links-connect {
+.lets-connect .container .content .links-connect {
   margin-top: 50px;
 }
-.contact .lets-connect .container .content .links-connect a {
+.lets-connect .container .content .links-connect a {
   display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 35px;
   position: relative;
 }
-.contact .lets-connect .container .content .links-connect a.active {
+.lets-connect .container .content .links-connect a.active {
   font-weight: 500;
 }
-.contact .lets-connect .container .content .links-connect a.active::after, .contact .lets-connect .container .content .links-connect a:hover::after {
+.lets-connect .container .content .links-connect a.active::after, .lets-connect .container .content .links-connect a:hover::after {
   content: "";
   font-weight: 500;
   position: absolute;
@@ -1226,13 +1302,19 @@ footer .border-bottom {
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-.contact .lets-connect .container .content .h2-links h2 {
-  font-size: 56px;
+.lets-connect .container .content .h2-links h2 {
+  font-size: 36px;
   color: #191919;
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 80px;
 }
+@media (min-width: 992px) {
+  .lets-connect .container .content .h2-links h2 {
+    font-size: 56px;
+  }
+}
+
 .contact .container {
   display: block;
 }
@@ -1322,4 +1404,49 @@ footer .border-bottom {
 }
 .map img {
   width: 100vw;
+}
+
+.our-news-articles .container .h2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.our-news-articles .container .h2 h2 {
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .our-news-articles .container .h2 h2 {
+    font-size: 45px;
+    margin-top: 100px;
+  }
+}
+.our-news-articles .container .wrapper-articles .image-article {
+  position: relative;
+}
+.our-news-articles .container .wrapper-articles .image-article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: -20px;
+}
+.our-news-articles .container .wrapper-articles .image-article p {
+  color: #636363;
+  margin-top: 25px;
+  line-height: 2;
+}
+.our-news-articles .container .wrapper-articles .image-article .date {
+  height: 64px;
+  width: 56px;
+  background-color: #F9D783;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.our-news-articles .container .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

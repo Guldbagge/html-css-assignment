@@ -80,6 +80,65 @@ html, body{
     }
 }
 
+.btn-square {
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #191919;
+    text-decoration: none;
+    padding: 5px 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    @media (min-width: 992px){
+        font-size: 21px;
+    }
+
+    i {
+        margin-left: 8px;
+        font-size: 1rem;
+
+        @media (min-width: 992px){
+            font-size: 1.3rem;
+        }
+    }
+
+    &:hover{
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+}
+
+.btn-square-black {
+
+  
+    background-color:  #191919;
+    border: 1px solid #878787;
+    color: white;
+    text-decoration: none;
+    padding: 5px 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 16px;
+
+    @media (min-width: 992px){
+        font-size: 21px;
+    }
+
+    i {
+        margin-left: 8px;
+        font-size: 1rem;
+        @media (min-width: 992px){
+            font-size: 1.3rem;
+        }
+    }
+
+    &:hover{
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+}
+
 .btn-service {
     background-color: #191919;
     border: 1px solid #191919;
@@ -998,6 +1057,11 @@ display: none;
     }
 
    .testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
         @media (min-width: 1400px){
             background-color: #FFFFFF;
             height: 887px;
@@ -1204,6 +1268,11 @@ display: none;
                 padding: 15px 30px;
                 border-radius: 25px;
                 margin-right: 20px;
+                margin-bottom: 20px;
+
+                @media (min-width: 992px){
+                    margin-bottom: 0px;
+                }
             }
         }
     }
@@ -1237,26 +1306,26 @@ footer{
             align-items: flex-start;
 
             .logo{
-
-                p{
-                    display: none;
-                }
-
+                display: none;
                 img{
                     margin-top: 20px;
                     margin-bottom: 20px;
                 }
+
+                p{
+                    display: none;
+                }
+                @media (min-width: 768px) {
+                    display: block;
+                }
             }
 
             @media (min-width: 992px) {
+               
                 .logo{
                     img{
                         margin-top: 20px;
                         margin-bottom: 40px;
-                    }
-
-                    p{
-                        display: none;
                     }
                 }
             }
@@ -1281,8 +1350,8 @@ footer{
                     @media (min-width: 768px) {
                     font-size: 22px;
                     margin-top: 40px;
+                    }
                 }
-            }
                 
                 .links{
                     display: none;
@@ -1335,76 +1404,82 @@ footer{
 
 // lets-connect section
 
-.contact{
 
-    .lets-connect{
-    background-color:#F0EFE9;
-    position: relative;
 
-        .line{
-            display: none;
-            position: absolute;
-            bottom: 0px;
-            
-            @media (min-width: 1400px){
-                display: block;
-            }
+.lets-connect{
+background-color:#F0EFE9;
+position: relative;
+
+    .line{
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        
+        @media (min-width: 1400px){
+            display: block;
         }
+    }
 
-        .container{
+    .container{
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .content{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            .content{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
 
-                .links-connect{
-                    margin-top: 50px;
-                    a{
-                        // nead to change to block, a is inline
-                        display: inline-block;
-                        color: #191919;
-                        text-decoration: none;
-                        margin-right: 35px;
-                        position: relative;
+            .links-connect{
+                margin-top: 50px;
+                a{
+                    // nead to change to block, a is inline
+                    display: inline-block;
+                    color: #191919;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    position: relative;
 
-                        &.active {
-                            font-weight: 500;
-                        }
+                    &.active {
+                        font-weight: 500;
+                    }
 
-                        // After active will the following to occur
-                        &.active::after,
-                        &:hover::after {
-                            content: '';
-                            font-weight: 500;
-                            position: absolute;
-                            height: 2px;
-                            width: 15px;
-                            background-color: #191919;
-                            left: 50%;
-                            bottom: -3px;
-                            transform: translate((calc(50% - 15px)));
-                        }
+                    // After active will the following to occur
+                    &.active::after,
+                    &:hover::after {
+                        content: '';
+                        font-weight: 500;
+                        position: absolute;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
                     }
                 }
-                
-                .h2-links{
-                    h2{
-                        font-size: 56px;        
-                        color: #191919;
-                        font-family: 'Dm Sans', sans-serif;
-                        font-weight: 700;    
-                        margin-bottom: 80px;    
-                    }
+            }
+            
+            .h2-links{
+                h2{
+                    font-size: 36px;        
+                    color: #191919;
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;    
+                    margin-bottom: 80px; 
+
+                    @media (min-width: 992px) {
+                        font-size: 56px;
+                    }  
                 }
             }
         }
     }
+}
+
+.contact{
 
     .container{
         display: block;
@@ -1497,6 +1572,79 @@ footer{
     margin-top: 120px;
     img{
     width: 100vw;
+    }
+}
+
+// our news & articles section
+
+.our-news-articles{
+
+    .container{
+        
+        .h2{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            
+            h2{
+                font-family: 'Dm Sans', sans-serif;
+                font-weight: 700;
+                font-size: 25px;
+                margin-top: 30px;
+
+                @media (min-width: 992px){
+                    font-size: 45px; 
+                    margin-top: 100px;
+                }
+            }
+        }
+       
+        .wrapper-articles{
+            // display: grid;
+
+
+            .image-article{
+             
+                h3{
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: -20px;
+                }
+            
+                p{
+                    color: #636363;
+                    margin-top: 25px;
+                    line-height: 2;
+                }
+                
+                position: relative;
+                .date{
+                    height: 64px;
+                    width: 56px;
+                    background-color: #F9D783;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+            }
+
+            @media (min-width: 992px){
+
+            }
+
+            @media (min-width: 1400px){
+
+            }
+ 
+
+        }
+
+        .number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
