@@ -691,6 +691,10 @@ display: none;
 .services-section{
     background-color:#F0EFE9;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
     .lines-white-right{
         position: absolute;
@@ -749,7 +753,7 @@ display: none;
             margin-top: -60px;
             margin-bottom: 45px;
 
-            @media (min-width: 576px){
+            @media (min-width: 992px){
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows:  1fr 1fr ;
             }
@@ -1116,8 +1120,8 @@ display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
     margin-top: 100px;
+    margin-bottom: 80px;
     
     .article-red-text{
         color: #F94D1C; 
@@ -1166,15 +1170,39 @@ display: none;
     }
 
     .wrapper-image-and-text{
+        
+        .image-and-text{
+            text-decoration: none;
+            color: #636363;
+            h3{color: #191919;
+            font-size: 22px;
+            }
+        }
+
         .image-article{
             position: relative;
+
+            :hover{
+                opacity: 0.8; 
+            }
+            
             .date{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
                 height: 64px;
                 width: 56px;
                 background-color: #F9D783;
                 position: absolute;
                 top: 10px;
                 left: 10px;
+                h3{ margin-top: 25px;
+                }
+                p{margin-top: 10px;}
+             
             }
         }
 
@@ -1659,6 +1687,10 @@ position: relative;
                     position: absolute;
                     top: 10px;
                     left: 10px;
+                    h3{ margin-top: 15px;
+                    }
+                    p{margin-top: 15px;}
+             
                 }
             }
         }
@@ -1672,5 +1704,3 @@ position: relative;
         }
     }
 }
-
-

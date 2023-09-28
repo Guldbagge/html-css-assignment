@@ -619,6 +619,10 @@ header .container .menu .btn-login {
 .services-section {
   background-color: #F0EFE9;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .services-section .lines-white-right {
   position: absolute;
@@ -679,7 +683,7 @@ header .container .menu .btn-login {
   margin-top: -60px;
   margin-bottom: 45px;
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .services-section .container .services-sections {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -992,8 +996,8 @@ header .container .menu .btn-login {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
   margin-top: 100px;
+  margin-bottom: 80px;
 }
 .article-and-news .article-red-text {
   color: #F94D1C;
@@ -1036,16 +1040,37 @@ header .container .menu .btn-login {
     align-items: center;
   }
 }
+.article-and-news .wrapper-image-and-text .image-and-text {
+  text-decoration: none;
+  color: #636363;
+}
+.article-and-news .wrapper-image-and-text .image-and-text h3 {
+  color: #191919;
+  font-size: 22px;
+}
 .article-and-news .wrapper-image-and-text .image-article {
   position: relative;
 }
+.article-and-news .wrapper-image-and-text .image-article :hover {
+  opacity: 0.8;
+}
 .article-and-news .wrapper-image-and-text .image-article .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 64px;
   width: 56px;
   background-color: #F9D783;
   position: absolute;
   top: 10px;
   left: 10px;
+}
+.article-and-news .wrapper-image-and-text .image-article .date h3 {
+  margin-top: 25px;
+}
+.article-and-news .wrapper-image-and-text .image-article .date p {
+  margin-top: 10px;
 }
 @media (min-width: 1400px) {
   .article-and-news .wrapper-image-and-text {
@@ -1475,6 +1500,12 @@ footer .border-bottom {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+.our-news-articles .container .wrapper-articles .image-article .date h3 {
+  margin-top: 15px;
+}
+.our-news-articles .container .wrapper-articles .image-article .date p {
+  margin-top: 15px;
 }
 .our-news-articles .container .number {
   display: flex;
