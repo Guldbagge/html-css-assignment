@@ -1580,7 +1580,7 @@ position: relative;
 .our-news-articles{
 
     .container{
-        
+
         .h2{
             display: flex;
             justify-content: start;
@@ -1600,16 +1600,45 @@ position: relative;
         }
        
         .wrapper-articles{
-            // display: grid;
+
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            :hover{
+                opacity: 0.9; 
+            }
 
 
-            .image-article{
-             
+            @media (min-width: 768px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 1400px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            
+            .image-and-text{
+                text-decoration: none;
+                color: #636363;
+                h3{color: #191919;
+                font-size: 22px;
+                }
+                
+
+            }
+
+            .image-article{  
+
+    
                 h3{
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22px;
                     font-weight: 700;
-                    margin-bottom: -20px;
+                    margin-bottom: -25px;
+
                 }
             
                 p{
@@ -1619,7 +1648,11 @@ position: relative;
                 }
                 
                 position: relative;
+                
                 .date{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
                     height: 64px;
                     width: 56px;
                     background-color: #F9D783;
@@ -1628,22 +1661,14 @@ position: relative;
                     left: 10px;
                 }
             }
-
-            @media (min-width: 992px){
-
-            }
-
-            @media (min-width: 1400px){
-
-            }
- 
-
         }
 
         .number{
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 100px;
+            margin-bottom: 80px;
         }
     }
 }
