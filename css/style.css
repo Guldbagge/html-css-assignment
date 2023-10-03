@@ -1356,12 +1356,15 @@ footer .border-bottom {
 
 .contact .container {
   display: block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media (min-width: 1400px) {
   .contact .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: auto;
   }
 }
 .contact .container .border {

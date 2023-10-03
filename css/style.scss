@@ -1535,10 +1535,13 @@ footer{
     
         .container{
             display: block;
+           width: fit-content;
+
             @media (min-width: 1400px){
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: auto;
             }
     
             .border{ 
