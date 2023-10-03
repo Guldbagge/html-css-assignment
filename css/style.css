@@ -768,7 +768,7 @@ header .container .menu .btn-login {
     left: 0px;
   }
   .why-choose-us .container .best-business-image .best-business-square {
-    width: 957px;
+    width: 937px;
     height: 425px;
     background-color: #F0EFE9;
     z-index: -1;
@@ -1439,10 +1439,15 @@ footer .border-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 .map img {
   width: 100vw;
+}
+@media (min-width: 992px) {
+  .map img {
+    margin-top: 120px;
+  }
 }
 
 .our-news-articles .container .h2 {
