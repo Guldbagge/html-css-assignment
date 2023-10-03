@@ -248,6 +248,11 @@ header {
             display: none;
             justify-content: flex-start;
             align-items: center;
+
+            a{
+                text-decoration: none;
+                color: black
+            }
             
             // Over 1200px show contactinformation-bar
             @media (min-width: 1200px) {
@@ -348,11 +353,14 @@ header {
 .showcase {
     background-color:#F0EFE9;
     position: relative;
+    z-index: 1;
 
     .line{
         display: none;
         position: absolute;
         bottom: 0px;
+        z-index: -1;
+        
         
         @media (min-width: 1400px){
             display: block;
@@ -368,6 +376,7 @@ header {
             padding-top: 40px;
             padding-bottom: 40px;
             text-align: center;
+           
             // all text center under content included h p a
             
             @media (min-width: 1200px){
@@ -430,25 +439,31 @@ header {
 // brand section
 
 .brand{
-display: none;
-    
-    @media (min-width: 1200px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
 
-   img{
-    display: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    height: 60px;
-    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    .brands{
+        display: none;
+        
+        @media (min-width: 1200px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-        @media (min-width: 1400px){
-            display: inline-block   
+    img{
+        display: none;
+        margin-left: 60px;
+        margin-right: 60px;
+        height: 60px;
+        width: auto;
+
+            @media (min-width: 1400px){
+                display: inline-block;
+                margin-top: 100px;
+            }
         }
     }
 }
@@ -672,6 +687,14 @@ display: none;
                 .btn-black{
                 font-weight: 100;
                 margin-bottom: 10px;
+                }
+
+                .btn-round{
+
+                    i{
+                        font-size: 15px;
+                        margin-left: 5px;
+                    }
                 }
 
                 a{
@@ -1651,26 +1674,20 @@ position: relative;
             }
             
             .image-and-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 text-decoration: none;
                 color: #636363;
+                
                 h3{color: #191919;
                 font-size: 22px;
-                margin-left: 15px;
                 }
-                p{
-                margin-left: 15px;
-                }
-                
-
             }
 
             .image-article{  
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                text-align: start;
-    
+
                 h3{
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22px;
@@ -1687,7 +1704,8 @@ position: relative;
                 }
                 
                 position: relative;
-                
+                z-index: -1;
+            
                 .date{
                     display: flex;
                     align-items: center;
@@ -1698,6 +1716,7 @@ position: relative;
                     position: absolute;
                     top: 10px;
                     left: 25px;
+                    z-index: 1;
                     h3{ margin-top: 15px;
                         margin-left: 7px;
                     }
@@ -1717,4 +1736,85 @@ position: relative;
             margin-bottom: 80px;
         }
     }
+}
+
+// page is under construction section
+
+.wrapper-loader{
+    height: 100vh;
+    animation: changeColors 5s infinite ease-in-out;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loader{
+        position: absolute;
+        animation: changePosition 20s infinite ease-in-out;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        font-size: 50px;
+        padding: 10px;
+    }
+}
+
+
+
+@keyframes changeColors {
+    0%{
+        background-color: #F0EFE9;
+        color: #84837e;
+    }
+
+     25%{
+        background-color:#cdc9c0;
+        color: #84837e;
+    }
+
+    50%{
+        background-color: #F0EFE9;
+        color: #84837e;
+    }
+
+    75%{
+        background-color: #cdc9c0;
+        color: #84837e;
+    }
+
+    100%{
+        background-color: #F0EFE9;
+        color: #84837e;
+    } 
+}
+
+@keyframes changePosition {
+    0%{
+        top: 0;
+        left: 0;
+        
+    }
+
+     25%{
+        top: 0;
+        left: calc(100% - 90px);
+        
+    }
+
+    50%{
+        
+        top: calc(100% - 95px);
+        left: calc(100% - 90px);
+    }
+
+    75%{
+        top: calc(100% - 95px);
+        left: 0;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    } 
 }
