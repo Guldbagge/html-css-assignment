@@ -589,9 +589,8 @@ header {
                     position: absolute;
                     width: 375px;
                     height: 180px;
-                    background-color: #BEEBFF;
-                    bottom: 40px;
-                    right: 220px;
+                    left: 20;
+                    bottom: 103px;
                     
                     .name-founder{
                         display: flex;
@@ -836,39 +835,29 @@ header {
 
 .why-choose-us{
     margin-top: 60px;
+    position: relative;
+    z-index: -1;
+   
 
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+         
         @media (min-width: 1400px){
             flex-direction: row;
             justify-content: space-between;
 
-            .best-business-image{
-                position: relative;
-                z-index: -10;
-                top: 0px;
-                left: 0px;
-
-                .best-business-square{
-                    width: 937px;
-                    height: 425px;
-                    background-color: #F0EFE9;
-                    z-index: -1;
-                    position: absolute;
-                    right: -160px;
-                    bottom: -340px;
-                }
-
-                .best-image{
-                    position: absolute;
-                    z-index: 1;
-                    top: -270px;
-                    right: 0px;
-                }
+            .best-business-square{
+                width: 58%;
+                height: 425px;
+                background-color: #F0EFE9;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin-bottom: 60px;
+                z-index: -1;
             }
         }
 
@@ -878,6 +867,8 @@ header {
             align-items: center;
             justify-content: center;
             margin-top: 50px;
+            padding-right: 50px;
+            background-color: #ffffff;
             
             h2{
                 font-family: 'DM Sans', sans-serif;
@@ -1357,6 +1348,7 @@ footer{
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            padding: 20px;
 
             .logo{
                 display: none;
