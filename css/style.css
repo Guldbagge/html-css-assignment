@@ -233,6 +233,9 @@ header .container .contactinformation-bar a {
   text-decoration: none;
   color: black;
 }
+header .container .contactinformation-bar a :hover {
+  font-weight: 400;
+}
 @media (min-width: 1200px) {
   header .container .contactinformation-bar {
     display: flex;
@@ -245,6 +248,9 @@ header .container .contactinformation-bar .content-box {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
+}
+header .container .contactinformation-bar .content-box :hover {
+  font-weight: 400;
 }
 header .container .contactinformation-bar .content-box i {
   margin-right: 5px;
@@ -779,7 +785,7 @@ header .container .menu .btn-login {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  padding-right: 50px;
+  padding-right: 100px;
   background-color: #ffffff;
 }
 .why-choose-us .container .best-business h2 {
@@ -1539,13 +1545,28 @@ footer .border-bottom {
 }
 
 .wrapper-loader {
-  height: 100vh;
   animation: changeColors 5s infinite ease-in-out;
   position: relative;
   z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 350px);
+}
+@media (min-width: 768px) {
+  .wrapper-loader {
+    height: calc(100vh - 400px);
+  }
+}
+@media (min-width: 992px) {
+  .wrapper-loader {
+    height: calc(100vh - 450px);
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper-loader {
+    height: calc(100vh - 635px);
+  }
 }
 .wrapper-loader .loader {
   position: absolute;
@@ -1600,4 +1621,11 @@ footer .border-bottom {
     top: 0;
     left: 0;
   }
+}
+.news .digitalization {
+  background-color: #F0EFE9;
+  padding-bottom: 50px;
+}
+.news .digitalization .btn-transparent {
+  background-color: white;
 }

@@ -250,9 +250,13 @@ header {
             justify-content: flex-start;
             align-items: center;
 
+
             a{
                 text-decoration: none;
-                color: black
+                color: black;
+                :hover{
+                    font-weight: 400;
+                }
             }
             
             // Over 1200px show contactinformation-bar
@@ -267,6 +271,11 @@ header {
                 font-family: 'Inter', sans-serif;
                 font-size: 15px;
                 font-weight: 300;
+                :hover{
+                    font-weight: 400;
+                }
+
+ 
 
             i{
                 margin-right: 5px;
@@ -867,7 +876,7 @@ header {
             align-items: center;
             justify-content: center;
             margin-top: 50px;
-            padding-right: 50px;
+            padding-right: 100px;
             background-color: #ffffff;
             
             h2{
@@ -1735,15 +1744,28 @@ footer{
 
 // services page
 // page is under construction section
+    
 
 .wrapper-loader{
-    height: 100vh;
     animation: changeColors 5s infinite ease-in-out;
     position: relative;
     z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100vh - 350px);
+
+    @media (min-width: 768px){
+        height: calc(100vh - 400px);
+    }
+
+    @media (min-width: 992px){
+        height: calc(100vh - 450px);
+    }
+
+    @media (min-width: 1200px){
+        height: calc(100vh - 635px);
+    }
 
     .loader{
         position: absolute;
@@ -1808,4 +1830,20 @@ footer{
         top: 0;
         left: 0;
     } 
+}
+
+// Page news-details
+.news{
+
+
+
+.digitalization{
+    background-color: #F0EFE9;
+    padding-bottom: 50px;
+
+    .btn-transparent{
+        background-color: white;
+    }
+}
+
 }
