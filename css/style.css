@@ -1643,49 +1643,49 @@ footer .border-bottom {
     left: 0;
   }
 }
-.news .digitalization {
+.news-digitalization .digitalization {
   background-color: #F0EFE9;
   padding-bottom: 50px;
   width: 100%;
 }
-.news .digitalization .btn-transparent {
+.news-digitalization .digitalization .btn-transparent {
   background-color: white;
 }
 @media (min-width: 1200px) {
-  .news .digitalization-container {
+  .news-digitalization .digitalization-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
   }
 }
-.news section {
+.news-digitalization section {
   width: 100%;
   margin-right: 50px;
 }
 @media (min-width: 1200px) {
-  .news section {
+  .news-digitalization section {
     width: 66%;
   }
 }
-.news section h2 {
+.news-digitalization section h2 {
   font-size: 45px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 20px;
 }
-.news section .h4-digitalization {
+.news-digitalization section .h4-digitalization {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.news section .h4-digitalization h4 {
+.news-digitalization section .h4-digitalization h4 {
   font-size: 20px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 400;
   margin-right: 20px;
 }
-.news section .h4-digitalization .dot {
+.news-digitalization section .h4-digitalization .dot {
   background-color: #F0D082;
   height: 10px;
   width: 10px;
@@ -1693,16 +1693,16 @@ footer .border-bottom {
   margin-right: 20px;
   margin-bottom: 10px;
 }
-.news section img {
+.news-digitalization section img {
   margin-top: 50px;
   width: 100%;
 }
-.news section p {
+.news-digitalization section p {
   color: #6a6a6a;
   margin-top: 40px;
   line-height: 2;
 }
-.news section .p {
+.news-digitalization section .p {
   display: flex;
   color: #6a6a6a;
   font-size: 22px;
@@ -1710,44 +1710,44 @@ footer .border-bottom {
   margin-right: 80px;
   margin-top: 60px;
 }
-.news section .p i {
+.news-digitalization section .p i {
   margin-right: 40px;
   margin-top: 50px;
 }
-.news section .button-digitalization {
+.news-digitalization section .button-digitalization {
   display: grid;
   align-items: center;
   justify-content: center;
   grid-template-areas: "Digitalization School" "IT  Design" "Work Tech";
   margin-bottom: 30px;
 }
-.news section .button-digitalization .btn-gray {
+.news-digitalization section .button-digitalization .btn-gray {
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 30px;
 }
 @media (min-width: 768px) {
-  .news section .button-digitalization {
+  .news-digitalization section .button-digitalization {
     grid-template-areas: "Digitalization School IT" "Design Work Tech";
   }
 }
 @media (min-width: 1400px) {
-  .news section .button-digitalization {
+  .news-digitalization section .button-digitalization {
     grid-template-areas: "Digitalization School IT  Design Work Tech";
   }
 }
-.news Aside {
+.news-digitalization Aside {
   width: 100%;
   margin-top: 40px;
 }
 @media (min-width: 1200px) {
-  .news Aside {
+  .news-digitalization Aside {
     width: 27%;
     margin-top: 242px;
   }
 }
-.news Aside .searchbox-no-position {
+.news-digitalization Aside .searchbox-no-position {
   background-color: #f3f3f3;
   display: flex;
   align-items: center;
@@ -1755,7 +1755,7 @@ footer .border-bottom {
   border-radius: 25px;
   padding: 8px 20px;
 }
-.news Aside .searchbox-no-position input {
+.news-digitalization Aside .searchbox-no-position input {
   background-color: transparent;
   width: 100%;
   border: none;
@@ -1763,17 +1763,17 @@ footer .border-bottom {
   font-size: 0.7rem;
   margin-left: 5px;
 }
-.news Aside .searchbox-with-position {
+.news-digitalization Aside .searchbox-with-position {
   background-color: #f3f3f3;
   border-radius: 25px;
   padding: 8px 20px;
   position: relative;
 }
-.news Aside .searchbox-with-position i {
+.news-digitalization Aside .searchbox-with-position i {
   position: absolute;
   top: 13px;
 }
-.news Aside .searchbox-with-position input {
+.news-digitalization Aside .searchbox-with-position input {
   background-color: transparent;
   width: 100%;
   border: none;
@@ -1781,70 +1781,70 @@ footer .border-bottom {
   font-size: 0.7rem;
   padding-left: 20px;
 }
-.news Aside .Recent-Posts {
+.news-digitalization Aside .Recent-Posts {
   border: #c6c6c6 solid 1px;
   padding: 20px;
   margin-top: 40px;
 }
-.news Aside .Recent-Posts h3 {
+.news-digitalization Aside .Recent-Posts h3 {
   font-size: 22px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   margin-top: 30px;
 }
-.news Aside .Recent-Posts .border-bottom-strong {
+.news-digitalization Aside .Recent-Posts .border-bottom-strong {
   border: #515151 solid 1px;
   width: 15%;
   margin-top: -7px;
 }
-.news Aside .Recent-Posts a {
+.news-digitalization Aside .Recent-Posts a {
   color: #191919;
   text-decoration: none;
 }
-.news Aside .Recent-Posts a h4 {
+.news-digitalization Aside .Recent-Posts a h4 {
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 30px;
 }
-.news Aside .Recent-Posts a p {
+.news-digitalization Aside .Recent-Posts a p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #6a6a6a;
   margin-top: 10px;
 }
-.news Aside .Categories {
+.news-digitalization Aside .Categories {
   border: #c6c6c6 solid 1px;
   padding: 20px;
   margin-top: 40px;
 }
-.news Aside .Categories h3 {
+.news-digitalization Aside .Categories h3 {
   font-size: 22px;
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   margin-top: 30px;
 }
-.news Aside .Categories .border-bottom-strong {
+.news-digitalization Aside .Categories .border-bottom-strong {
   border: #515151 solid 1px;
   width: 15%;
   margin-top: -7px;
   margin-bottom: 20px;
 }
-.news Aside .Categories a {
+.news-digitalization Aside .Categories a {
   color: #191919;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-.news Aside .Categories a .bold-p {
+.news-digitalization Aside .Categories a .bold-p {
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 7px;
   margin-right: 10px;
 }
-.news Aside .Categories a .gray-p {
+.news-digitalization Aside .Categories a .gray-p {
   font-family: "Dm Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
