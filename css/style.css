@@ -72,6 +72,27 @@ html, body {
   color: #F0EFE9;
 }
 
+.btn-gray {
+  background-color: rgb(225, 225, 225);
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 14px;
+  width: 130px;
+}
+.btn-gray i {
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+.btn-gray:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
 .btn-square {
   background-color: transparent;
   border: 1px solid #878787;
@@ -1625,7 +1646,208 @@ footer .border-bottom {
 .news .digitalization {
   background-color: #F0EFE9;
   padding-bottom: 50px;
+  width: 100%;
 }
 .news .digitalization .btn-transparent {
   background-color: white;
+}
+@media (min-width: 1200px) {
+  .news .digitalization-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.news section {
+  width: 100%;
+  margin-right: 50px;
+}
+@media (min-width: 1200px) {
+  .news section {
+    width: 66%;
+  }
+}
+.news section h2 {
+  font-size: 45px;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.news section .h4-digitalization {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.news section .h4-digitalization h4 {
+  font-size: 20px;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.news section .h4-digitalization .dot {
+  background-color: #F0D082;
+  height: 10px;
+  width: 10px;
+  border-radius: 99px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.news section img {
+  margin-top: 50px;
+  width: 100%;
+}
+.news section p {
+  color: #6a6a6a;
+  margin-top: 40px;
+  line-height: 2;
+}
+.news section .p {
+  display: flex;
+  color: #6a6a6a;
+  font-size: 22px;
+  font-family: "Dm Sans", sans-serif;
+  margin-right: 80px;
+  margin-top: 60px;
+}
+.news section .p i {
+  margin-right: 40px;
+  margin-top: 50px;
+}
+.news section .button-digitalization {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "Digitalization School" "IT  Design" "Work Tech";
+  margin-bottom: 30px;
+}
+.news section .button-digitalization .btn-gray {
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .news section .button-digitalization {
+    grid-template-areas: "Digitalization School IT" "Design Work Tech";
+  }
+}
+@media (min-width: 1400px) {
+  .news section .button-digitalization {
+    grid-template-areas: "Digitalization School IT  Design Work Tech";
+  }
+}
+.news Aside {
+  width: 100%;
+  margin-top: 40px;
+}
+@media (min-width: 1200px) {
+  .news Aside {
+    width: 27%;
+    margin-top: 242px;
+  }
+}
+.news Aside .searchbox-no-position {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+.news Aside .searchbox-no-position input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+.news Aside .searchbox-with-position {
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  padding: 8px 20px;
+  position: relative;
+}
+.news Aside .searchbox-with-position i {
+  position: absolute;
+  top: 13px;
+}
+.news Aside .searchbox-with-position input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.7rem;
+  padding-left: 20px;
+}
+.news Aside .Recent-Posts {
+  border: #c6c6c6 solid 1px;
+  padding: 20px;
+  margin-top: 40px;
+}
+.news Aside .Recent-Posts h3 {
+  font-size: 22px;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.news Aside .Recent-Posts .border-bottom-strong {
+  border: #515151 solid 1px;
+  width: 15%;
+  margin-top: -7px;
+}
+.news Aside .Recent-Posts a {
+  color: #191919;
+  text-decoration: none;
+}
+.news Aside .Recent-Posts a h4 {
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.news Aside .Recent-Posts a p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6a6a6a;
+  margin-top: 10px;
+}
+.news Aside .Categories {
+  border: #c6c6c6 solid 1px;
+  padding: 20px;
+  margin-top: 40px;
+}
+.news Aside .Categories h3 {
+  font-size: 22px;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.news Aside .Categories .border-bottom-strong {
+  border: #515151 solid 1px;
+  width: 15%;
+  margin-top: -7px;
+  margin-bottom: 20px;
+}
+.news Aside .Categories a {
+  color: #191919;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.news Aside .Categories a .bold-p {
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+.news Aside .Categories a .gray-p {
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6a6a6a;
+  margin-top: 7px;
 }
