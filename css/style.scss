@@ -35,9 +35,9 @@ html, body{
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
-       
     }
 }
+
 .btn-black {
     background-color: #191919;
     border: 1px solid #191919;
@@ -133,8 +133,6 @@ html, body{
 }
 
 .btn-square-black {
-
-  
     background-color:  #191919;
     border: 1px solid #878787;
     color: white;
@@ -298,8 +296,6 @@ header {
                 :hover{
                     font-weight: 400;
                 }
-
- 
 
             i{
                 margin-right: 5px;
@@ -1518,134 +1514,136 @@ footer{
 
 .lets-connect{
     background-color:#F0EFE9;
-    position: relative;
     
-        .line{
-            display: none;
-            position: absolute;
-            bottom: 0px;
-            
-            @media (min-width: 1400px){
-                display: block;
-            }
+    
+    .line{
+        display: none;
+        position: absolute;
+        bottom: 600px;
+        
+        @media (min-width: 1400px){
+            display: block;
         }
-    
-        .container{
-    
+    }
+
+    .container{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        .content{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            .content{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-    
-                .links-connect{
-                    margin-top: 50px;
-                    a{
-                        // nead to change to block, a is inline
-                        display: inline-block;
-                        color: #191919;
-                        text-decoration: none;
-                        margin-right: 35px;
-                        position: relative;
-    
-                        &.active {
-                            font-weight: 500;
-                        }
-    
-                        // After active will the following to occur
-                        &.active::after,
-                        &:hover::after {
-                            content: '';
-                            font-weight: 500;
-                            position: absolute;
-                            height: 2px;
-                            width: 15px;
-                            background-color: #191919;
-                            left: 50%;
-                            bottom: -3px;
-                            transform: translate((calc(50% - 15px)));
-                        }
+
+            .links-connect{
+                margin-top: 50px;
+                a{
+                    // nead to change to block, a is inline
+                    display: inline-block;
+                    color: #191919;
+                    text-decoration: none;
+                    margin-right: 35px;
+                    position: relative;
+
+                    &.active {
+                        font-weight: 500;
+                    }
+
+                    // After active will the following to occur
+                    &.active::after,
+                    &:hover::after {
+                        content: '';
+                        font-weight: 500;
+                        position: absolute;
+                        height: 2px;
+                        width: 15px;
+                        background-color: #191919;
+                        left: 50%;
+                        bottom: -3px;
+                        transform: translate((calc(50% - 15px)));
                     }
                 }
+            }
+            
+            .h2-links{
+                h2{
+                    font-size: 36px;        
+                    color: #191919;
+                    font-family: 'Dm Sans', sans-serif;
+                    font-weight: 700;    
+                    margin-bottom: 80px; 
+
+                    @media (min-width: 992px) {
+                        font-size: 56px;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+.contact{
+
+    .container{
+        display: block;
+        width: fit-content;
+
+        @media (min-width: 1400px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+        }
+
+        .border{ 
+            margin-top: 120px;
+            margin-bottom: 80px;
+            a{
+                text-decoration: none;
+                display: flex;
+                padding: 50px;
                 
-                .h2-links{
-                    h2{
-                        font-size: 36px;        
+                .btn-round{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #191919;
+                    color: #F0EFE9;
+                    height: 65px;
+                    width: 65px;
+                }
+
+                .contact-information{
+
+                    @media (min-width: 992px){
+                        margin-left: 20px;
+                        margin-bottom: -20px;
+                        margin-right: 70px;
+                    }
+
+                    h3{
+                        font-size: 22px;        
                         color: #191919;
                         font-family: 'Dm Sans', sans-serif;
-                        font-weight: 700;    
-                        margin-bottom: 80px; 
-    
-                        @media (min-width: 992px) {
-                            font-size: 56px;
-                        }  
+                        font-weight: 700;  
+                        margin-bottom: 15px;  
+                    }
+
+                    p{
+                        color: #191919;
+                        font-size: 18;
                     }
                 }
             }
         }
     }
-    
-    .contact{
-    
-        .container{
-            display: block;
-            width: fit-content;
+}
 
-            @media (min-width: 1400px){
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: auto;
-            }
-    
-            .border{ 
-                margin-top: 120px;
-                margin-bottom: 80px;
-                a{
-                    text-decoration: none;
-                    display: flex;
-                    padding: 50px;
-                    
-                    .btn-round{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #191919;
-                        color: #F0EFE9;
-                        height: 65px;
-                        width: 65px;
-                    }
-    
-                    .contact-information{
-
-                        @media (min-width: 992px){
-                            margin-left: 20px;
-                            margin-bottom: -20px;
-                            margin-right: 70px;
-                        }
-    
-                        h3{
-                            font-size: 22px;        
-                            color: #191919;
-                            font-family: 'Dm Sans', sans-serif;
-                            font-weight: 700;  
-                            margin-bottom: 15px;  
-                        }
-    
-                        p{
-                            color: #191919;
-                            font-size: 18;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
 
 // leave message section
 
@@ -1687,12 +1685,13 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 60px;
+    
     img{
     width: 100vw;
 
-    @media (min-width: 992px){
-        margin-top: 120px;
-    }
+        @media (min-width: 992px){
+            margin-top: 120px;
+        }
     }
 }
 
@@ -1908,7 +1907,6 @@ footer{
         padding-bottom: 50px;
 
         .date{
-           
             margin-top: 50px;
         }
 
@@ -1916,8 +1914,7 @@ footer{
             background-color: white;
         }
 
-        width: 100%;
-        
+        width: 100%; 
     }
 
     // how-to-use-digitalization section
@@ -1928,7 +1925,6 @@ footer{
             display: flex;
             justify-content: space-between;
             flex-direction: row;
-            
         }
     }
 
@@ -1952,6 +1948,7 @@ footer{
             display: flex;
             align-items: center;
             justify-content: start;
+
             h4{
  
                 font-size: 20px;
@@ -1968,7 +1965,6 @@ footer{
                 margin-right: 20px;
                 margin-bottom: 10px;
             }
-
         }
 
         img{
@@ -1984,7 +1980,6 @@ footer{
 
         .p{
             display: flex;
-
             color: #6a6a6a;
             font-size: 22px;
             font-family: 'Dm Sans', sans-serif;
@@ -1998,7 +1993,6 @@ footer{
             }
         }
 
-
         .button-digitalization{
             display: grid;
             align-items: center;
@@ -2008,6 +2002,7 @@ footer{
             "IT  Design"
             "Work Tech";
             margin-bottom: 30px;
+
             .btn-gray{
 
                 margin-bottom: 20px;
@@ -2016,7 +2011,6 @@ footer{
                 margin-top: 30px;
             }
                 
-
             @media (min-width: 768px){
                 grid-template-areas: 
                 "Digitalization School IT"  
@@ -2027,13 +2021,10 @@ footer{
                 grid-template-areas: 
                 "Digitalization School IT  Design Work Tech";
             }
-
         }
-    
     }  
 
     Aside {
-
         width: 100%;
         margin-top: 40px;
 
@@ -2100,6 +2091,7 @@ footer{
                 margin-top: -7px;
 
             }
+
             a{
                 color: #191919;
                 text-decoration: none;
@@ -2111,13 +2103,13 @@ footer{
                     margin-top: 30px;
                
                 }
+
                 p{
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                     color: #6a6a6a;
                     margin-top: 10px;
-            
                 }
             }
         }
@@ -2132,7 +2124,6 @@ footer{
                 font-family: 'Dm Sans', sans-serif;
                 font-weight: 700;
                 margin-top: 30px;
-
             }
             
             .border-bottom-strong{
@@ -2140,13 +2131,12 @@ footer{
                 width: 15%;
                 margin-top: -7px;
                 margin-bottom: 20px;
-
             }
+
             a{
                 color: #191919;
                 text-decoration: none;
                 display: flex;
-                
                 align-items: center;
 
                 .bold-p{
@@ -2157,13 +2147,13 @@ footer{
                     margin-right: 10px;
                
                 }
+
                 .gray-p{
                     font-family: 'Dm Sans', sans-serif;
                     font-weight: 700;
                     font-size: 16px;
                     color: #6a6a6a;
                     margin-top: 7px;
-            
                 }
             }
 

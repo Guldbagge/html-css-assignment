@@ -1351,12 +1351,11 @@ footer .border-bottom {
 
 .lets-connect {
   background-color: #F0EFE9;
-  position: relative;
 }
 .lets-connect .line {
   display: none;
   position: absolute;
-  bottom: 0px;
+  bottom: 600px;
 }
 @media (min-width: 1400px) {
   .lets-connect .line {
