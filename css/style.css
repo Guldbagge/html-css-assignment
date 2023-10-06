@@ -456,7 +456,7 @@ header .container .menu .btn-login {
 }
 .accounting .container {
   border: solid 1px #191919;
-  margin: 100px;
+  margin: 5px;
   padding: 50px;
 }
 @media (min-width: 1200px) {
@@ -464,6 +464,7 @@ header .container .menu .btn-login {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 100px;
   }
 }
 .accounting .container .section-title,
@@ -544,22 +545,41 @@ header .container .menu .btn-login {
   margin-bottom: 120px;
 }
 .about-company .container .container-about-company .woman {
-  margin-left: 50px;
-  margin-right: 50px;
   position: relative;
   z-index: -10;
 }
+@media (min-width: 768px) {
+  .about-company .container .container-about-company .woman {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+.about-company .container .container-about-company .woman img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .about-company .container .container-about-company .woman img {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 .about-company .container .container-about-company .woman .box {
-  width: 375px;
-  height: 180px;
   background-color: #BEEBFF;
   padding-top: 40px;
   padding-left: 25px;
   position: absolute;
-  width: 375px;
-  height: 180px;
   left: 20;
   bottom: 103px;
+}
+@media (min-width: 768px) {
+  .about-company .container .container-about-company .woman .box {
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 375px;
+    height: 180px;
+  }
 }
 .about-company .container .container-about-company .woman .box .name-founder {
   display: flex;
@@ -834,6 +854,15 @@ header .container .menu .btn-login {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+.why-choose-us .container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .why-choose-us .container img {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -1138,6 +1167,15 @@ header .container .menu .btn-login {
     padding-right: 15px;
   }
 }
+.article-and-news img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .article-and-news img {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 
 .newsletter {
   background-color: #F0EFE9;
@@ -1405,10 +1443,12 @@ footer .border-bottom {
   height: 65px;
   width: 65px;
 }
-.contact .container .border a .contact-information {
-  margin-left: 20px;
-  margin-bottom: -20px;
-  margin-right: 70px;
+@media (min-width: 992px) {
+  .contact .container .border a .contact-information {
+    margin-left: 20px;
+    margin-bottom: -20px;
+    margin-right: 70px;
+  }
 }
 .contact .container .border a .contact-information h3 {
   font-size: 22px;

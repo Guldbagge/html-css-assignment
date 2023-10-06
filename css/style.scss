@@ -511,15 +511,15 @@ header {
     align-items: center;
     
     .container{
-        
         border: solid 1px #191919;
-        margin: 100px;
+        margin: 5px;
         padding: 50px;
 
         @media (min-width: 1200px) {
             display: flex;
             justify-content: center;
             align-items: center;  
+            margin: 100px;
         }
 
         .section-title,
@@ -607,23 +607,40 @@ header {
     .container{
         .container-about-company{
             .woman{
-                margin-left: 50px;
-                margin-right: 50px;
+    
                 position: relative;
                 z-index: -10;
 
+                @media (min-width: 768px){
+                    width: auto;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+
+                img{
+                    width: 100%;
+
+                    @media (min-width: 768px){
+                        width: fit-content;
+                    }
+                }
+
                 .box{
-                    width: 375px;
-                    height: 180px;
+
                     background-color: #BEEBFF;
                     padding-top: 40px;
                     padding-left: 25px;
-
                     position: absolute;
-                    width: 375px;
-                    height: 180px;
                     left: 20;
                     bottom: 103px;
+
+                    @media (min-width: 768px){
+                        width: auto;
+                        margin-left: 50px;
+                        margin-right: 50px;
+                        width: 375px;
+                        height: 180px;
+                    }
                     
                     .name-founder{
                         display: flex;
@@ -932,7 +949,15 @@ header {
                 align-items: center;
                 justify-content: space-between; 
             } 
-        }    
+        }
+        
+        img{
+            width: 100%;
+
+            @media (min-width: 768px){
+                width: fit-content;
+            }
+        }
     }
 }
 
@@ -1289,6 +1314,14 @@ header {
             }
         }
     }
+    img{
+        width: 100%;
+
+        @media (min-width: 768px){
+            width: fit-content;
+        }
+    }
+    
 }
 
 // newsletter section
@@ -1588,9 +1621,12 @@ footer{
                     }
     
                     .contact-information{
-                        margin-left: 20px;
-                        margin-bottom: -20px;
-                        margin-right: 70px;
+
+                        @media (min-width: 992px){
+                            margin-left: 20px;
+                            margin-bottom: -20px;
+                            margin-right: 70px;
+                        }
     
                         h3{
                             font-size: 22px;        
@@ -1858,7 +1894,6 @@ footer{
 
 // Page news-details
 .news-digitalization{
-
 
     .digitalization{
         background-color: #F0EFE9;
