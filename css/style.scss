@@ -1314,14 +1314,14 @@ header {
             }
         }
     }
+
     img{
         width: 100%;
 
         @media (min-width: 768px){
             width: fit-content;
         }
-    }
-    
+    } 
 }
 
 // newsletter section
@@ -1593,7 +1593,7 @@ footer{
     
         .container{
             display: block;
-           width: fit-content;
+            width: fit-content;
 
             @media (min-width: 1400px){
                 display: flex;
@@ -1755,6 +1755,14 @@ footer{
 
             .image-article{  
 
+                img{
+                    width: 100%;
+            
+                    @media (min-width: 768px){
+                        width: fit-content;
+                    }
+                } 
+
                 h3{
                     font-family: 'DM Sans', sans-serif;
                     font-size: 22px;
@@ -1780,7 +1788,7 @@ footer{
                     background-color: #F9D783;
                     position: absolute;
                     top: 10px;
-                    left: 25px;
+                    left: 10px;
                     z-index: 1;
                     h3{ margin-top: 15px;
                         margin-left: 7px;
@@ -1899,11 +1907,17 @@ footer{
         background-color: #F0EFE9;
         padding-bottom: 50px;
 
+        .date{
+           
+            margin-top: 50px;
+        }
+
         .btn-transparent{
             background-color: white;
         }
 
         width: 100%;
+        
     }
 
     // how-to-use-digitalization section
@@ -2156,3 +2170,4 @@ footer{
         }
     }
 }
+
