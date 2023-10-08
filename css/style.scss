@@ -1514,12 +1514,13 @@ footer{
 
 .lets-connect{
     background-color:#F0EFE9;
-    
+    position: relative;
     
     .line{
         display: none;
+        // position: absolute;
         position: absolute;
-        bottom: 600px;
+        bottom: 0px;
         
         @media (min-width: 1400px){
             display: block;
@@ -2156,7 +2157,6 @@ footer{
                     margin-top: 7px;
                 }
             }
-
         }
     }
 }
